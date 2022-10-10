@@ -14,7 +14,7 @@ body{
 
 .page{
    margin-top: 10px;
-   width:1200px;
+   max-width:1200px;
    height:95vh;
    display: inline-block;
    text-align:left;
