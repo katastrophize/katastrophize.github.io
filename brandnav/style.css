@@ -1,0 +1,243 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+ background-color: white;
+  font-weight: 400;
+}
+
+.outer{
+  text-align: center;
+}
+
+.page{
+  position: relative;
+   margin-top: 10px;
+   max-width: 1200px;
+   width: 100%;
+   height: 100%;
+   display: inline-block;
+   text-align: left;
+	 background-color: white;
+   opacity: .8;
+
+}
+
+.top{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 10;
+  background-color: white;
+  z-index: 100;
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+
+
+}
+.logo{
+  max-width: 200px;
+  text-align: left;
+  padding-left: 10px;
+
+
+}
+.logo_img{
+  margin-top: 10px;
+  margin-let: 10px;
+  width: 50%;
+}
+
+.menu {
+display: none;
+}
+
+#menuoverlay{
+  display: none;
+}
+
+#close{
+  display: block;
+}
+
+.navbar{
+  top: 0;
+  width: 100%;
+  height: 10px;
+  background-color: white;
+  z-index: 100;
+  opacity: .9;
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav{
+  padding-right: 50px;
+}
+
+.search{
+  align-content: flex-end;
+  margin-left: auto;
+  max-width: 100px;
+}
+
+.search_img{
+  margin-top: 10px;
+  margin-left: 10px;
+  max-width: 30%;
+}
+
+a{
+  color: #000;
+  text-decoration: none;
+  font-weight: 800;
+  margin-right: 20px;
+
+}
+
+a:hover{
+  color: #1a645a;
+}
+
+.content{
+  background-color: #ecd4d2;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+
+}
+
+.tile{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+}
+
+.tilebg1{
+  background-image: url(img/skatepark.jpg);
+}
+
+.tilebg2{
+  background-image: url(img/kidskate.jpg);
+}
+
+.tilebg3{
+  background-image: url(img/gizmo.jpg);
+}
+
+.tilebg4{
+  background-image: url(img/toyko.jpg);
+}
+
+.tilebg5{
+  background-image: url(img/boliviaskate.jpg);
+}
+
+.tilebg6{
+  background-image: url(img/japanskate.jpg);
+}
+
+
+@media screen and (max-width:850px){
+    body{
+      background-color: #ccc;
+    }
+      .page{
+        max-width: 480px;
+        height: 98vh;
+				background-color: white;
+      }
+
+      .menu{
+        display:inline-block;
+      }
+
+      .menu img{
+        width: 50px;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+ #menuoverlay{
+  position: absolute;
+  top: 0px;
+  background-color: #32af9f;
+  width: 100%;
+  height: 98vh;
+  text-align: center;
+}
+
+.innermenu{
+  margin-top: 50px;
+}
+
+.innermenu div{
+  padding-bottom: 50px;
+}
+
+#close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+      .logo{
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        text-align: right;
+        cursor: pointer;
+      }
+     .navbar{
+        display: none;
+      }
+      .nav{
+        display: inline-block;
+      }
+      .search{
+        display: none;
+      }
+
+}
+
+@media screen and (min-width:850px) and (max-width:1250px){
+
+  body{
+    background-color: #CCC;
+  }
+  .page{
+    max-width: 800px;
+  }
+
+  .search_img{
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width:1450px){
+  body{
+    background-color: #ccc;
+  }
+
+  .page{
+    max-width: 1400px;
+  }
+
+}
